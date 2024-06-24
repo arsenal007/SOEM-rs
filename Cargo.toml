@@ -11,7 +11,7 @@ edition = "2018"
 
 [dependencies]
 boolinator = "^2.4"
-SOEM-sys = "0.2"
+SOEM-sys = { path = "../SOEM-sys" }
 num = "^0.2"
 num-traits = "^0.2"
 num-derive = "^0.2"

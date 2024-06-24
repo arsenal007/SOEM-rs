@@ -308,8 +308,6 @@ impl<'a> Context<'a> {
                 elist: &mut elist.0,
                 idxstack: &mut idxstack.0,
                 ecaterror: &mut *ecaterror,
-                DCtO: Default::default(),
-                DCl: Default::default(),
                 DCtime: &mut *dc_time,
                 SMcommtype: &mut sm_commtype.0,
                 PDOassign: &mut pdo_assign.0,
@@ -319,6 +317,7 @@ impl<'a> Context<'a> {
                 FOEhook: Default::default(),
                 EOEhook: Default::default(),
                 manualstatechange: Default::default(),
+		userdata: std::ptr::null_mut(),
             },
             _phantom: Default::default(),
         };
